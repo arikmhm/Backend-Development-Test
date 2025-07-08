@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "3b89ba8c-f5dc-43dc-9fdf-6a3725fb054d",
+		"name": "backend-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36779451"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-Terminals",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzUyMDQwNTc2fQ.ikG_6D6k4e9XDY0l9LIXwhWLB1jnbp4tMFmlwNcnKW4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Terminal A\",\r\n    \"location\": \"Central Jakarta\",\r\n    \"latitude\": -6.175,\r\n    \"longitude\": 106.827\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/terminals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"terminals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Terminal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzUyMDQwNTc2fQ.ikG_6D6k4e9XDY0l9LIXwhWLB1jnbp4tMFmlwNcnKW4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Terminal A\",\r\n    \"location\": \"Central Jakarta\",\r\n    \"latitude\": -6.175,\r\n    \"longitude\": 106.827\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/terminals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"terminals"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
