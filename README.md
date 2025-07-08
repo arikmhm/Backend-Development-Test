@@ -33,10 +33,10 @@ Dibuat menggunakan bahasa pemrograman Golang dan diunggah ke Go Playground.
   - **Link Go Playground:**
     [https://go.dev/play/p/ALdpINx86Lm](https://go.dev/play/p/ALdpINx86Lm)
 
-- **Pola Bintang Kompleks (bebas):**
-  - **Deskripsi:** Menggambar pola bintang kompleks seperti yang diminta.
+- **Pola Bintang Belah Ketupat bergaris tengah:**
+  - **Deskripsi:** Menggambar pola belah ketupat kosong didalam yang terbelah dengan garis.
   - **Link Go Playground:**
-    [https://go.dev/play/p/CX5m1XvzBI4](https://go.dev/play/p/CX5m1XvzBI4)
+    [https://go.dev/play/p/Wxr2S5nf0sf](https://go.dev/play/p/Wxr2S5nf0sf)
 
 ### 2. System Design Test
 
